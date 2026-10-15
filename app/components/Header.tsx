@@ -61,13 +61,13 @@ export default function Header({ activeSection = "hero" }: HeaderProps) {
             className="group flex items-center gap-4 focus:outline-none"
             aria-label="AVENOR 10X Home"
           >
-            <div className="relative w-12 h-12 sm:w-14 sm:h-14 bg-black border border-white/25 rounded-full flex items-center justify-center overflow-hidden transition-all duration-300 group-hover:border-white group-hover:scale-105 shadow-[0_0_20px_rgba(255,255,255,0.08)]">
+            <div className="relative w-12 h-12 sm:w-14 sm:h-14 bg-white border border-white/40 rounded-full flex items-center justify-center overflow-hidden transition-all duration-300 group-hover:scale-105 shadow-sm">
               <Image
                 src="/logo.png"
                 alt="AVENOR 10X"
                 width={50}
                 height={50}
-                className="object-contain filter invert contrast-200 p-2"
+                className="object-contain p-2"
                 priority
               />
             </div>

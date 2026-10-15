@@ -34,13 +34,13 @@ export default function Footer({ onSelectService }: FooterProps) {
           {/* Company Brand Column */}
           <div className="lg:col-span-5 space-y-6">
             <div className="flex items-center gap-3.5">
-              <div className="relative w-12 h-12 bg-black border border-white/20 rounded-full flex items-center justify-center overflow-hidden">
+              <div className="relative w-12 h-12 bg-white border border-white/30 rounded-full flex items-center justify-center overflow-hidden">
                 <Image
                   src="/logo.png"
                   alt="AVENOR 10X"
                   width={40}
                   height={40}
-                  className="object-contain filter invert contrast-200 p-1"
+                  className="object-contain p-1.5"
                 />
               </div>
               <div className="flex flex-col">

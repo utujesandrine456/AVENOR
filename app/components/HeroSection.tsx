@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { ArrowRight, ArrowUpRight, Sparkles } from "lucide-react";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
 import RotatingServiceCards from "./RotatingServiceCards";
 import { ServiceItem } from "../data/services";
@@ -38,12 +38,6 @@ export default function HeroSection({ onSelectService }: HeroSectionProps) {
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
             className="lg:col-span-6 flex flex-col justify-center text-left"
           >
-            {/* Pill Indicator */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-white/15 bg-white/3 text-xs font-mono text-white/70 mb-6 w-fit">
-              <Sparkles className="w-3.5 h-3.5 text-white" />
-              <span>TECHNOLOGY WITH PURPOSE</span>
-            </div>
-
             {/* Main Headline */}
             <h1 className="text-4xl sm:text-6xl xl:text-7xl font-extrabold tracking-tight text-white leading-[1.08] mb-6">
               Building Smarter Systems for Business.
@@ -57,7 +51,7 @@ export default function HeroSection({ onSelectService }: HeroSectionProps) {
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-10">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
               <a
                 href="#services"
                 onClick={(e) => scrollToSection(e, "#services")}
@@ -75,34 +69,6 @@ export default function HeroSection({ onSelectService }: HeroSectionProps) {
                 <span>Let&apos;s Talk</span>
                 <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </a>
-            </div>
-
-            {/* Micro Details Anchor */}
-            <div className="grid grid-cols-3 gap-4 pt-6 border-t border-white/10 max-w-md">
-              <div>
-                <p className="text-[10px] uppercase font-mono tracking-widest text-white/40 mb-1">
-                  Pillars
-                </p>
-                <p className="text-xs font-semibold text-white tracking-wider">
-                  4 Core Disciplines
-                </p>
-              </div>
-              <div>
-                <p className="text-[10px] uppercase font-mono tracking-widest text-white/40 mb-1">
-                  Engineering
-                </p>
-                <p className="text-xs font-semibold text-white tracking-wider">
-                  Purpose-Built
-                </p>
-              </div>
-              <div>
-                <p className="text-[10px] uppercase font-mono tracking-widest text-white/40 mb-1">
-                  Motto
-                </p>
-                <p className="text-xs font-semibold italic text-white tracking-wider truncate">
-                  &ldquo;Every Sale. Accounted For.&rdquo;
-                </p>
-              </div>
             </div>
           </motion.div>
 
