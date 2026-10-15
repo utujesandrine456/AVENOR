@@ -85,7 +85,7 @@ export default function ProjectsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.15 }}
           transition={{ duration: 0.7 }}
-          className="border border-white/20 rounded-3xl bg-neutral-950 overflow-hidden hover:border-white/40 transition-colors duration-300 shadow-[0_20px_60px_rgba(0,0,0,0.8)]"
+          className="border border-white/20 rounded-md bg-neutral-950 overflow-hidden hover:border-white/40 transition-colors duration-300 shadow-[0_20px_60px_rgba(0,0,0,0.8)]"
         >
           {/* Top Bar */}
           <div className="flex items-center justify-between px-6 sm:px-8 py-4 border-b border-white/10 bg-white/2">
@@ -150,9 +150,9 @@ export default function ProjectsSection() {
                 </div>
 
                 {/* Google Play Store Card */}
-                <div className="p-5 border border-white/15 rounded-2xl bg-white/3 flex items-center justify-between mb-8 hover:border-white/30 transition-colors">
+                <div className="p-5 border border-white/15 rounded-md bg-white/3 flex items-center justify-between mb-8 hover:border-white/30 transition-colors">
                   <div className="flex items-center gap-3.5">
-                    <div className="w-12 h-12 rounded-xl bg-white/10 border border-white/20 flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-md bg-white/10 border border-white/20 flex items-center justify-center">
                       <Smartphone className="w-6 h-6 text-white" />
                     </div>
                     <div>
@@ -170,13 +170,13 @@ export default function ProjectsSection() {
                 </div>
               </div>
 
-              {/* Action Buttons */}
+              {/* Action Buttons with rounded-md */}
               <div className="flex flex-col sm:flex-row gap-3 pt-6 border-t border-white/10">
                 <a
                   href="https://play.google.com/store/search?q=kwizera+shop&c=apps"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center justify-center gap-2 px-7 py-3.5 text-xs uppercase font-bold tracking-widest text-black bg-white rounded-xl hover:bg-black hover:text-white border border-white transition-all duration-300 cursor-pointer shadow-[0_0_20px_rgba(255,255,255,0.15)]"
+                  className="group inline-flex items-center justify-center gap-2 px-7 py-3.5 text-xs uppercase font-bold tracking-widest text-black bg-white rounded-md hover:bg-black hover:text-white border border-white transition-all duration-300 cursor-pointer shadow-[0_0_20px_rgba(255,255,255,0.15)]"
                 >
                   <ExternalLink className="w-4 h-4" />
                   <span>Download on Play Store</span>
@@ -184,7 +184,7 @@ export default function ProjectsSection() {
                 <a
                   href="#contact"
                   onClick={scrollToContact}
-                  className="group inline-flex items-center justify-center gap-2 px-7 py-3.5 text-xs uppercase font-bold tracking-widest text-white bg-black rounded-xl border border-white/30 hover:border-white hover:bg-white/10 transition-all duration-300 cursor-pointer"
+                  className="group inline-flex items-center justify-center gap-2 px-7 py-3.5 text-xs uppercase font-bold tracking-widest text-white bg-black rounded-md border border-white/30 hover:border-white hover:bg-white/10 transition-all duration-300 cursor-pointer"
                 >
                   <span>Build A Custom App</span>
                 </a>
