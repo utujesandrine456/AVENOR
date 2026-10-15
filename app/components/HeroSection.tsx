@@ -55,16 +55,16 @@ export default function HeroSection({ onSelectService }: HeroSectionProps) {
               <a
                 href="#services"
                 onClick={(e) => scrollToSection(e, "#services")}
-                className="group inline-flex items-center justify-center gap-3 px-7 py-3.5 text-xs uppercase font-bold tracking-widest text-black bg-white rounded-md hover:bg-black hover:text-white border border-white transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.15)] cursor-pointer"
+                className="group inline-flex items-center justify-center gap-3 px-6 py-3 text-md font-semibold text-black bg-white rounded-md hover:bg-black hover:text-white border border-white transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.15)] cursor-pointer"
               >
-                <span>Explore What We Do</span>
+                <span>Explore More</span>
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </a>
 
               <a
                 href="#contact"
                 onClick={(e) => scrollToSection(e, "#contact")}
-                className="group inline-flex items-center justify-center gap-2 px-7 py-3.5 text-xs uppercase font-bold tracking-widest text-white bg-black rounded-md border border-white/30 hover:border-white hover:bg-white/10 transition-all duration-300 cursor-pointer"
+                className="group inline-flex items-center justify-center gap-3 px-6 py-3 text-md font-semibold text-white bg-black rounded-md border border-white/30 hover:border-white hover:bg-white/10 transition-all duration-300 cursor-pointer"
               >
                 <span>Let&apos;s Talk</span>
                 <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

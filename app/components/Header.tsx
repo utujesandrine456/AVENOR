@@ -48,8 +48,8 @@ export default function Header({ activeSection = "hero" }: HeaderProps) {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-black/92 backdrop-blur-lg border-b border-white/10 py-3"
-          : "bg-black/60 backdrop-blur-md border-b border-white/5 py-4"
+          ? "bg-black/92 backdrop-blur-lg border-b border-white/10"
+          : "bg-black/60 backdrop-blur-md border-b border-white/5 py-1"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
@@ -61,13 +61,13 @@ export default function Header({ activeSection = "hero" }: HeaderProps) {
             className="group flex items-center gap-4 focus:outline-none"
             aria-label="AVENOR 10X Home"
           >
-            <div className="relative w-12 h-12 sm:w-14 sm:h-14 bg-white border border-white/40 rounded-full flex items-center justify-center overflow-hidden transition-all duration-300 group-hover:scale-105 shadow-sm">
+            <div className="relative w-14 h-14 sm:w-20 sm:h-20 rounded-full flex items-center justify-center overflow-hidden transition-all duration-300 group-hover:scale-105 shadow-sm">
               <Image
-                src="/logo.png"
+                src="/white.png"
                 alt="AVENOR 10X"
-                width={50}
-                height={50}
-                className="object-contain p-2"
+                width={100}
+                height={100}
+                className="object-contain p-1"
                 priority
               />
             </div>
@@ -83,7 +83,7 @@ export default function Header({ activeSection = "hero" }: HeaderProps) {
 
           {/* Desktop Navigation — increased length, gap, and rounded-full icon frames */}
           <nav
-            className="hidden md:flex items-center gap-4 sm:gap-6 border border-white/20 rounded-md px-8 sm:px-10 py-3 bg-black/80 backdrop-blur-md shadow-[0_4px_24px_rgba(0,0,0,0.6)]"
+            className="hidden md:flex items-center gap-4 sm:gap-6 border border-white/20 rounded-md px-4 sm:px-8 py-2 bg-black/80 backdrop-blur-md shadow-[0_4px_24px_rgba(0,0,0,0.6)]"
             aria-label="Primary navigation"
           >
             {navLinks.map((link) => {
@@ -122,7 +122,7 @@ export default function Header({ activeSection = "hero" }: HeaderProps) {
             <a
               href="#contact"
               onClick={(e) => handleNavClick(e, "#contact")}
-              className="group inline-flex items-center gap-2 px-6 py-2.5 text-xs uppercase font-bold tracking-widest text-black bg-white rounded-md hover:bg-black hover:text-white border border-white transition-all duration-300 cursor-pointer shadow-[0_0_15px_rgba(255,255,255,0.15)]"
+              className="group inline-flex items-center gap-2 px-4 py-2.5 text-xs uppercase font-bold tracking-widest text-black bg-white hover:bg-black hover:text-white border border-white transition-all duration-300 cursor-pointer shadow-[0_0_15px_rgba(255,255,255,0.15)]"
             >
               <span>Let&apos;s Talk</span>
               <ArrowUpRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
